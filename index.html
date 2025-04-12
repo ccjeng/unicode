@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unicode 轉義序列編碼/解碼工具</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Unicode 轉義序列編碼/解碼工具</h1>
+    
+    <div class="form-group">
+      <label for="inputText">輸入文字:</label>
+      <textarea id="inputText" placeholder="請在此輸入要轉換的文字"></textarea>
+    </div>
+    
+    <div class="button-group">
+      <button id="encodeBtn">編碼</button>
+      <button id="decodeBtn">解碼</button>
+      <button id="clearBtn">清除</button>
+    </div>
+    
+    <div class="form-group output-container">
+      <label for="outputText">輸出結果:</label>
+      <textarea id="outputText" readonly></textarea>
+      <button id="copyBtn" class="copy-btn">複製</button>
+      <div id="copyNotification" class="copy-notification">已複製到剪貼簿!</div>
+    </div>
+    
+    <div class="info-panel">
+      <h3>使用說明:</h3>
+      <p><strong>編碼</strong>：將普通文字轉換為 Unicode 轉義序列格式 (\uXXXX)</p>
+      <p><strong>例如</strong>：輸入「你好」→ 輸出「\u4f60\u597d」</p>
+      <p><strong>解碼</strong>：將 Unicode 轉義序列格式 (\uXXXX) 轉回普通文字</p>
+      <p><strong>例如</strong>：輸入「\u4f60\u597d」→ 輸出「你好」</p>
+      <p><strong>複製</strong>：點擊「複製」按鈕可將輸出結果複製到剪貼簿</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
