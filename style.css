@@ -91,4 +91,24 @@ button:hover {
 }
 .show-notification {
   opacity: 1;
+}
+
+/* 貼上按鈕樣式 */
+.paste-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #f1f1f1;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  max-width: 120px;
+  flex: none;
+}
+
+.paste-btn:hover {
+  background-color: #e1e1e1;
 } 
